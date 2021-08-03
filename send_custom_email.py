@@ -2,8 +2,8 @@ import smtplib
 
 #https://myaccount.google.com/lesssecureapps go here and turn on less secure apps
 
-Email_Address = "aryan68125@gmail.com"
-Password = "Ilovetoneystark@3000"
+Email_Address = "your email address"
+Password = "your email address password"
 
 with smtplib.SMTP("smtp.gmail.com",587) as smtp:
     smtp.ehlo()
@@ -18,5 +18,5 @@ with smtplib.SMTP("smtp.gmail.com",587) as smtp:
 
     msg = f'Subject: {subject} \n\n {body}'
 
-    smtp.sendmail(Email_Address,"aryan268859@gmail.com",msg)
+    smtp.sendmail(Email_Address,"email address of a person that you want to send emails to",msg)
 
